@@ -4,11 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Links to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Links to style.css -->
     <link rel="stylesheet" href="style.css" />
     <title>Color Scheme Generator</title>
   </head>
   <body>
+    <div class="container">
+      <header class="header">
+        <input type="color" id="input" class="input" value="#f55a5a" />
+        <select class="select">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome - dark</option>
+          <option value="monochrome-light">Monochrome - light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic - complement</option>
+          <option value="triad">Triad</option>
+        </select>
+        <button class="get-color-btn" id="get-color">Get color scheme</button>
+      </header>
+      <main class="color-section">
+        <div class="orange"></div>
+        <div class="black"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+        <div class="purple"></div>
+      </main>
+      <section class="color-values">
+        <p class="hex-value">#F55A5A</p>
+        <p class="hex-value">#2B283A</p>
+        <p class="hex-value">#FBF3AB</p>
+        <p class="hex-value">#AAD1B6</p>
+        <p class="hex-value">#A626D3</p>
+      </section>
+    </div>
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://scrimba.com/learn/frontend/solo-project-color-scheme-generator-co73343ea8c93c5d396d7ac67"
+        >Scrimba.</a
+      >
+      Coded by
+      <a href="#">Nazim Bayraktar.</a>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
