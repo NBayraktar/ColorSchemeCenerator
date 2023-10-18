@@ -12,7 +12,7 @@ body {
   width: 550px;
   height: 550px;
   margin: 15em auto;
-  background-color: #fff;
+  background-color: whitesmoke;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@ body {
 .select,
 .get-color-btn,
 .hex-value {
-  background-color: #2b283a;
+  background-color: #1f2937;
   color: whitesmoke;
   border-radius: 5px;
   font-size: 16px;
@@ -45,7 +45,7 @@ body {
 
 .select,
 .get-color-btn {
-  border: 1px solid #2b283a;
+  border: 1px solid #1f2937;
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
@@ -54,7 +54,7 @@ body {
 .select:hover,
 .get-color-btn:hover {
   background-color: whitesmoke;
-  color: #2b283a;
+  color: #1f2937;
   border: 1px solid rgb(43, 40, 58, 0.3);
   transition: 0.2s;
 }
@@ -91,6 +91,50 @@ body {
   justify-content: space-around;
 }
 
+.aside {
+  position: fixed;
+  top: 2em;
+  right: 2em;
+}
+
+.toggle-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 35px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+
+.toggle-btn:hover {
+  cursor: pointer;
+}
+
+.light-mode {
+  background-color: whitesmoke;
+  color: #1f2937;
+}
+
+.container-dark {
+  background-color: #1f2937;
+  box-shadow: 1px 1px 10px 1px#1f2937;
+}
+
+.select-dark,
+.btn-dark,
+.hex-value-light {
+  border: 1px solid #1f2937;
+  background-color: whitesmoke;
+  color: #1f2937;
+}
+
+.select-dark:hover,
+.btn-dark:hover {
+  background-color: #1f2937;
+  color: whitesmoke;
+  border: 1px solid rgb(245, 245, 245, 0.3);
+}
+
 /* Footer */
 .attribution {
   font-size: 11px;
@@ -104,4 +148,8 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.attribution-dark {
+  color: #1f2937;
 }
